@@ -9,6 +9,7 @@
 # int()
 # float()
 # str()
+# type()
 
 string_var = "Esto es un string, puede tener letras, números y caracteres especiales."
 integer_var = 5
@@ -99,4 +100,6 @@ nombre_completo_1 = nombre_completo(nombre_1, apellido_1)
 
 print("La nota final de", nombre_completo_1, "es", nota_final_persona_1)
 # print("La nota final de", nombre_completo_2, "es", nota_final_persona_2)
+
+
 
