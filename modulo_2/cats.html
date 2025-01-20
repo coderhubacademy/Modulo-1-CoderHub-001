@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats Images</title>
+</head>
+<style>
+  h1 {
+    color: red;
+    text-align: center;
+  }
+
+  .img-card {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+</style>
+<body>
+  <h1>Imagenes de Gatos</h1>
+  <div id="cats">
+  </div>
+</body>
+<script>
+  const api_url = 'https://http.cat/';
+  let status_code = [100, 200, 300, 400, 401, 404, 500, 502, 503, 504];
+  let cats = document.getElementById('cats');
+  status_code.forEach((code) => {
+    let img = document.createElement('img');
+    img.src = `${api_url}images/${code}.jpg`;
+    img.width = 150;
+    img.height = 150;
+    img.alt = `Cat ${code}`;
+    img.classList.add('img-card');
+    cats.appendChild(img);
+  });
+</script>
+</html>

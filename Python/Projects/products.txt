@@ -1,0 +1,10 @@
+Laptop - 999.99 - 10
+Smartphone - 699.99 - 25
+Headphones - 199.99 - 50
+Keyboard - 49.99 - 75
+Mouse - 29.99 - 100
+Monitor - 299.99 - 30
+Printer - 149.99 - 20
+Tablet - 399.99 - 40
+External Hard Drive - 89.99 - 60
+Webcam - 59.99 - 80

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera pagina web</title>
+</head>
+<style>
+  h1 {
+    color: red;
+    text-align: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+
+  .btn-black {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="text-center">
+    <h1 id="main-title">¡Hola mundo a todos!</h1>
+    <button class="btn-black">Cambiar color</button>
+    <button class="btn-red"> Restaurar color</button>
+  </div>
+</body>
+<script>
+  const btn = document.querySelector('.btn-black');
+  const btnRed = document.querySelector('.btn-red');
+  btn.addEventListener('click', () => {
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+  });
+  btnRed.addEventListener('click', () => {
+    document.body.style.backgroundColor = 'lightblue';
+    document.body.style.color = 'black';
+  });
+
+  let nombre = prompt('Ingresa tu nombre');
+  console.log(nombre);
+
+  let title = document.getElementById('main-title');
+  console.log(title);
+  title.innerHTML = `¡Hola ${nombre}!`;
+</script>
+</html>
