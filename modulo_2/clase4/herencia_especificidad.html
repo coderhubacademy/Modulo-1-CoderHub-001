@@ -1,0 +1,53 @@
+<!-- Especificidad en Selectores
+- Importancia
+- Especificidad
+- Orden de las fuentes
+
+- Si dos selectores tienen la misma importancia, se toma en cuenta la especificidad
+- Si dos selectores tienen la misma importancia y especificidad, se toma en cuenta el orden de las fuentes
+
+Rangos de importancia de selector
+
+- !important
+- Inline
+- ID
+- Clase
+- Elemento -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herencia</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+  }
+
+  body {
+    color: blue;
+  }
+
+  h1 {
+    color: rgb(28, 26, 26) !important;
+  }
+
+  .titulo_1 {
+    color: green !important;
+  }
+
+  .contenedor-1 .titulo_1 {
+    color: red;
+  }
+</style>
+<body>
+  <div class="contenedor-1"style="background-color: blueviolet; width: 100%;">
+    <h1 class="titulo_1">Esto es un titulo</h1>
+  </div>
+</body>
+</html>

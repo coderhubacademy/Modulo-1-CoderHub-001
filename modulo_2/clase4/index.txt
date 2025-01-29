@@ -1,0 +1,13 @@
+1. Modelo de Caja
+2. Herencia
+3. Especificidad en Selectores
+   - Importancia
+   - Especificidad
+   - Orden de las fuentes
+4. Medidas
+  - Relativas
+  - Absolutas
+5. Display
+  - block
+  - inline
+  - inline-block

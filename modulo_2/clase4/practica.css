@@ -1,0 +1,41 @@
+.main-nav-list {
+  list-style: none;
+}
+
+.main-nav-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.banner-container {
+  height: 600px;
+}
+
+.banner-aside {
+  background-color: #ed88e0;
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+
+.aside-card {
+  background-color: #f1f1f1;
+  padding: 5px;
+  height: 170px;
+  width: 80%;
+  margin: 10px 0px 0px 15px;
+}
+
+.banner-info{
+  background-color: gray;
+  width: 75%;
+  float: right;
+  height: 100%;
+  align-items: center;
+}
+
+.banner-info p {
+  font-size: 15px;
+  text-align: left;
+  margin: 10px;
+}

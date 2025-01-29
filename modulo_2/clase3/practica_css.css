@@ -1,0 +1,55 @@
+/* Selector de etiqueta */
+
+ul {
+  text-align: center;
+}
+
+/* Selector de clase */
+
+.text-red {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  background-color: black;
+  padding: 20px;
+  border: red solid 2px;
+}
+
+/* Selector de id */
+#banner {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Anidamiento de selectores */
+
+#banner h1 {
+  font-size: 50px;
+  font-weight:900;
+}
+
+#banner .title {
+  font-size: 50px;
+  font-weight:500;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: blueviolet;
+  opacity: 0.5; /* de 0 a 1 */
+}
+
+#banner .banner-text {
+  font-size: 20px;
+  color: gray;
+}
+
+/* Selector de atributo */
+
+a[href*="https"] {
+  color: green;
+}

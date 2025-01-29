@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Caja</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    height: 500px;
+    width: 100%;
+    border: solid 10px red;
+  }
+
+  .box1 {
+    height: 50%;
+    width: 100%;
+  }
+
+  .box2 {
+    height: 50%;
+    width: 100%;
+    background-color: yellow;
+    border: solid 10px black;
+  }
+
+  .box1 h1 {
+    padding-top: 20px;
+    color: rgb(24, 22, 22);
+    text-align: center;
+  }
+</style>
+<body>
+  <main>
+    <div class="box1">
+      <h1> Titulo de la pagina</h1>
+    </div>
+    <div class="box2"></div>
+  </main>
+</body>
+</html>
