@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.6rem;
+}
+
+.box-container {
+  height: 50rem;
+}
+
+.box1 {
+  background-color: red;
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+}
+
+.box2 {
+  background-color: rgb(55, 255, 0);
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+}
+
+.box3 {
+  background-color: rgb(0, 21, 255);
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+}
+
+.box4 {
+  background-color: rgb(255, 0, 255);
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  position: fixed;
+}

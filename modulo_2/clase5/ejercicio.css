@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+main-nav-list {
+  list-style: none;
+}
+
+.main-nav-list li {
+  display: inline-block;
+  margin: 20px;
+  font-weight: 500;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.banner-aside {
+  width: 20%;
+  background-color: #ed88e0;
+  display: inline-block;
+  margin: 0;
+  height: 100vh;
+}
+
+.banner-main-content {
+  width: 80%;
+  background-color: gray;
+  display: inline-block;
+  margin: 0;
+  height: 100vh;
+}
+
+.banner-main-content p {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.box1 {
+  width: 12rem;
+  height: 12rem;
+  background-color: #f1f1f1;
+  margin: 10px;
+}

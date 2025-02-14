@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5 {
+  width: 20%;
+  height: 10rem;
+}
+
+.item-1 {
+  background-color: red;
+}
+
+.item-2 {
+  background-color: blue;
+}
+
+.item-3 {
+  background-color: green;
+}
+
+.item-4 {
+  background-color: yellow;
+}
+
+.item-5 {
+  background-color: purple;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .item-1, .item-2, .item-3, .item-4, .item-5 {
+    width: 100%;
+  }
+}
