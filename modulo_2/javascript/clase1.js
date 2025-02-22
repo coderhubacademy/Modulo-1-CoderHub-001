@@ -4,9 +4,9 @@
 // Condicionales
 // Bucles
 // Funciones
+// Scope
 // Estrucutras de datos
 // Metodos
-// Scope
 // Librerias
 
 // Valores y tipos de datos
