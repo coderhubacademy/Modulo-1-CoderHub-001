@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de usuarios</title>
+</head>
+<body>
+  <h1>Lista de usuarios API</h1>
+  <ul id="user-list"></ul>
+  <script>
+    var api_url = "http://localhost:3000/api/users"
+    var api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQxNDY5ODk4LCJleHAiOjE3NDE0NzM0OTh9.YcQMbxQRYJmFkAek_11PeDUHV71lhTkXmcistexlOCs"
+
+    fetch(api_url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + api_token
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      var userList = document.getElementById('user-list');
+      data.forEach(user => {
+        var li = document.createElement('li');
+        li.textContent = user.username;
+        userList.appendChild(li);
+      });
+    })
+  </script>
+</body>
+</html>
