@@ -43,6 +43,17 @@ const agregarLenguaje = () => {
   input.value = "";
 };
 
+// function agregarLenguaje() {
+//   let input = document.getElementById("add-input");
+//   let nuevo_lenguaje = document.createElement("li");
+//   nuevo_lenguaje.innerText = input.value;
+
+//   lista_lenguajes.appendChild(nuevo_lenguaje);
+//   input.value = "";
+// }
+
+// const funAgregarLenguaje = agregarLenguaje()
+
 const filtrarLenguajes = () => {
   let input = document.getElementById("add-input");
   let value = input.value.toLowerCase();

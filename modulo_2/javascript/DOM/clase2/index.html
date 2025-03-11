@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM clase 2</title>
+</head>
+<style>
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <h1>DOM Clase 2</h1>
+  <form id='primer-formulario' class="formulario">
+    <label for="nombre"> Nombre: </label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+    <label for="apellido"> Apellido: </label>
+    <input type="text" id="apellido" placeholder="Escribe tu apellido">
+    <label for="telefono"> Telefono: </label>
+    <input type="tel" id="telefono" placeholder="Escribe tu telefono">
+    <label for="email"> Email: </label>
+    <input type="email" id="email" placeholder="Escribe tu email">
+    <label for="pais"> País: </label>
+    <select id="country">
+      <option value="mexico">México</option>
+      <option value="usa">Estados Unidos</option>
+      <option value="canada">Canadá</option>
+      <option value="colombia">Colombia</option>
+      <option value="argentina">Argentina</option>
+    </select>
+    <!-- <label for="ciudad"> Radio: </label>
+    <input type="radio" id="ciudad" name="ciudad" value="cdmx">CDMX
+    <input type="radio" id="ciudad" name="ciudad" value="gdl">GDL
+    <input type="radio" id="ciudad" name="ciudad" value="mty">MTY
+
+    <label for="ciudad"> Checkbox: </label>
+    <input type="checkbox" id="ciudad" name="ciudad" value="cdmx">CDMX
+    <input type="checkbox" id="ciudad" name="ciudad" value="gdl">GDL
+    <input type="checkbox" id="ciudad" name="ciudad" value="mty">MTY
+    <label for="mensaje"> Mensaje: </label> -->
+    <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+    <!-- <label for="file"> Subir archivo: </label>
+    <input type="file" id="file"> -->
+
+    <button type="submit">Enviar</button>
+
+
+    <div id="list">
+      <h2>Lista de usuarios</h2>
+      <ul id="users"></ul>
+    </div>
+  </form>
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probando eventos</title>
+</head>
+<body>
+  <form id="main-form">
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+    <button type="submit" id="submit-button">Enviar</button>
+  </form>
+  <script>
+    var inputNombre = document.getElementById('nombre');
+
+    inputNombre.addEventListener('input', function(event) {
+      console.log("Evento input", event);
+      console.log("Escribiendo", event.target.value);
+      console.log('Input es',inputNombre.value);
+    });
+
+    inputNombre.addEventListener('change', function(event) {
+      console.log("Cambiando", event.target.value);
+      let word_size = event.target.value.length
+
+      if (word_size < 5) {
+        alert("Tu nombre es muy corto");
+      } else {
+        alert("Tu nombre es muy largo");
+      }
+    });
+
+    inputNombre.addEventListener('focus', function(event) {
+      console.log("Focus en el campo", event.target.value);
+    });
+
+    inputNombre.addEventListener('blur', function(event) {
+      console.log("Salimos del campo", event.target.value);
+    });
+  </script>
+</body>
+</html>
