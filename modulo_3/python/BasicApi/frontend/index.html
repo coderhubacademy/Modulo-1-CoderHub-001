@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba</title>
+</head>
+<body>
+  <div id="usuarios"></div>
+</body>
+<script>
+  const baseUrl = "http://localhost:3000/api/v1/"
+
+  const usuariosDiv = document.getElementById("usuarios");
+
+  let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+  };
+
+  const listUsers = () => {
+    fetch(baseUrl + "users", {
+      method: "GET",
+      headers: headers,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        let usuarios = data.usuarios;
+        let html = "<ul>";
+        for (let i = 0; i < usuarios.length; i++) {
+          html += "<li>" + usuarios[i].nombre + "</li>";
+        }
+        html += "</ul>";
+        usuariosDiv.innerHTML = html;
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+
+  listUsers();
+
+</script>
+</html>

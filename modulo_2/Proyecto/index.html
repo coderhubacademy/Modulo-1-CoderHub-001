@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Sistema de inventario</title>
+</head>
+<body>
+  <header class="main-header">
+    <h1>Sistema de inventario</h1>
+  </header>
+  <section class="actions-section">
+    <div class="actions-section-add">
+      <a id="add-button" href="./add-form.html" class="btn-style">Agregar Producto<a/>
+    </div>
+    <div>
+      <a id="search-button" class="btn-style">Buscar Producto</a>
+    </div>
+  </section>
+  <section class="main-section">
+    <table border="1" class="main-table">
+      <thead class="main-table-head">
+        <tr>
+          <th>Name</th>
+          <th>SKU</th>
+          <th>Cantidad Disponible</th>
+          <th>Precio al Mayor</th>
+          <th>Precio al Detal</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="main-table-body">
+      </tbody>
+    </table>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
