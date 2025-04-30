@@ -1,0 +1,13 @@
+1. Agregar contenido a la ruta del home
+
+Crear controlador y vista personalizada para la ruta /
+
+2. Agregar sqlite al proyecto y devolver estudiantes
+
+Agregar libreria de sqlite al modelo de estudiantes y devolver los datos de una tabla.
+
+1. Descarga la libreria
+2. Crea la conexion
+3. Crea un db y la tabla si no existen
+4. Trae los estudiantes
+5. Devuelve los estudiantes en el export del modelo.

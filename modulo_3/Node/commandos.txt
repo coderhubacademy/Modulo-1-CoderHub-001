@@ -1,0 +1,26 @@
+Comandos Basicos de Node
+
+1. Crear un paquete de NPM
+
+npm init
+
+2. Instalar paquetes de npm 
+
+npm install
+
+Despues de el install ya se debe crear el package-lock.json donde puedes hacer seguimiento a los paquetes de tu proyecto
+
+3. Instalación de paquetes
+
+Como vimos en la clase 1 de node, podemos instalar paquetes de NPM para complementar las librerias de node, como Express o EJS.
+
+npm install express --save
+npm install ejs --save
+
+De igual manera les dejo la doc de npm install para que entiendan y conozcan las posibilidades del comando.
+
+https://docs.npmjs.com/cli/v8/commands/npm-install
+
+4. Correr archivo de node 
+
+node nombre_archivo.js desde la consola ubicado en la carpeta donde esta el archivo.
