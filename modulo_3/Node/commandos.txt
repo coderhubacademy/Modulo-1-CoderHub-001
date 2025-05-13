@@ -24,3 +24,19 @@ https://docs.npmjs.com/cli/v8/commands/npm-install
 4. Correr archivo de node 
 
 node nombre_archivo.js desde la consola ubicado en la carpeta donde esta el archivo.
+
+5. Nuevas librerias
+
+Express
+
+https://expressjs.com/
+
+Nodemon 
+
+https://www.npmjs.com/package/nodemon
+
+
+Sqlite3
+
+https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file
+
